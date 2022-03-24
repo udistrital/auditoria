@@ -8,6 +8,9 @@ import (
   "github.com/astaxie/beego"
 )
 
+// GetJsonWithHeader ...
+//
+// Deprecated: Movida-a/Traer-de utils_oas/auditoria
 func GetJsonWithHeader(urlp string, target interface{}, ctx *context.Context) error {
   req, err := http.NewRequest("GET",urlp, nil)
   if err != nil {
