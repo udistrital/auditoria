@@ -1,5 +1,8 @@
 # Estrategia de implementación librería Auditoría 
 
+⚠️ **IMPORTANTE:** Ahora [hace parte de utils_oas](https://github.com/udistrital/utils_oas/blob/master/auditoria/README.md),
+dejar de consumir las utilidades de auditoría de este repo, será archivado!
+
 Con el fin de mantener un registro completo de las transacciones y peticiones realizadas por un sistema, y saber qué se ha hecho, cuándo se ha hecho y quién lo ha hecho, se debe realizar la implementación de la librería de auditoría en APIs mid y crud.
 
 Requerimientos:
