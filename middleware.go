@@ -17,6 +17,9 @@ type Usuario struct {
 var userMap = make(map[string]string)
 var c = cache.New(60*time.Minute, 10*time.Minute)
 
+// getUserInfo2 ...
+//
+// Deprecated: Movida-a/Traer-de utils_oas/auditoria
 func getUserInfo2(ctx *context.Context)(u string){
 	
 	var usuario Usuario
@@ -34,6 +37,9 @@ func getUserInfo2(ctx *context.Context)(u string){
 	}
 }
 
+// getUserInfo ...
+//
+// Deprecated: Movida-a/Traer-de utils_oas/auditoria
 func getUserInfo(ctx *context.Context)(u string){
 	
 	var usuario Usuario
@@ -52,6 +58,9 @@ func getUserInfo(ctx *context.Context)(u string){
 	}
 }
 
+// ListenRequest ...
+//
+// Deprecated: Movida-a/Traer-de utils_oas/auditoria
 func ListenRequest(ctx *context.Context) {
 
 	/*---- Declaración de variables ---- */
@@ -120,6 +129,9 @@ func ListenRequest(ctx *context.Context) {
 
 }
 
+// InitMiddleware ...
+//
+// Deprecated: Movida-a/Traer-de utils_oas/auditoria
 func InitMiddleware() {
 	beego.InsertFilter("*", beego.AfterExec, ListenRequest, false)
 
